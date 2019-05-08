@@ -1,6 +1,6 @@
 NAME = mandelbrot_set
 CC = gcc
-CFLAGS = -std=gnu99 -pthread -fstrict-overflow -Werror -Wshadow -Wstrict-overflow=5  -pedantic
+CFLAGS = -std=gnu99 -pthread -fstrict-overflow -Wshadow -Wstrict-overflow=5  -pedantic
 LDFLAGS = -lm -I $(CURDIR)
 
 #error if student directory is not set
