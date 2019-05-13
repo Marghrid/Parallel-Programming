@@ -89,8 +89,8 @@ void mandelbrot_draw(int x_resolution, int y_resolution, int max_iter,
     }
     */
 
-    threads = (pthread_t*) malloc (num_threads *sizeof(pthread_t));
-    thread_args* args = (thread_args*) malloc (num_threads*sizeof (thread_args));
+    threads = (pthread_t*) calloc (num_threads, sizeof(pthread_t));
+    thread_args* args = (thread_args*) calloc (num_threads, sizeof (thread_args));
 
     int lines_per_thread = y_resolution / num_threads; //integer division
      //remainder lines distributed among the threads
