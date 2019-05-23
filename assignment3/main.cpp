@@ -5,6 +5,7 @@
 #include <png++/png.hpp>
 #include "x_conv.h"
 #include <chrono>
+#include <unistd.h>
 
 using namespace std;
 
