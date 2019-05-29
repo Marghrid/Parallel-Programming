@@ -1,7 +1,7 @@
 NAME = familytree
 CC = gcc
-CFLAGS = -std=gnu99 -lpthread -fopenmp -fstrict-overflow -Werror -Wall -Wshadow -pedantic -I$(CURDIR)
-LDFLAGS = -lm -lpthread -fopenmp -lrt -ldl
+CFLAGS = -std=gnu99 -fstrict-overflow -Wall -Wshadow -pedantic -I$(CURDIR)
+LDFLAGS = -lm -ldl
 
 #error if student directory is not set
 ifndef SDIR

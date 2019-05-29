@@ -1,7 +1,7 @@
 NAME = x_conv
 CC = g++
-CXXFLAGS = -fopenmp -std=c++11 -I/usr/local/include/ -fopenmp -fstrict-overflow -pedantic -Wstrict-overflow=5 -pedantic
-LDFLAGS = -fopenmp -lm -lpng -I $(CURDIR) -L/usr/local/lib/
+CXXFLAGS = -std=c++11 -I/usr/local/include/ -fstrict-overflow -pedantic -Wstrict-overflow=5 -pedantic
+LDFLAGS = -lm -lpng -I $(CURDIR) -L/usr/local/lib/
 
 
 #error if student directory is not set
