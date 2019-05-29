@@ -24,8 +24,10 @@ int traverse(tree *node, int numThreads) {
 	
 	if (node == NULL) return 0;
 
-    #pragma omp parallel single nowait firstprivate(node) num_threads(numThreads)
-	traverse_rec(node);
+	#pragma omp parallel num_threads(numThreads)
+	#pragma omp single nowait firstprivate(node)
+		traverse_rec(node);
+    	
 
 	return node->IQ;
 }
