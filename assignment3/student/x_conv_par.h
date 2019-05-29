@@ -26,7 +26,7 @@ Image x_convolution(Image &image, Matrix &filter, int num_thrds){
 
     Image newImage(3, Matrix(newImageHeight, Array(newImageWidth)));
 
-    #pragma omp parallel for num_threads(num_thrds) schedule(guided)
+    #pragma omp parallel for num_threads(num_thrds) schedule(guided) collapse(2)
     for (int i=0 ; i<newImageHeight ; i++) {
         for (int j=0 ; j<newImageWidth ; j++) {
             for (int d=0 ; d<3 ; d++) {
