@@ -28,7 +28,7 @@ OBJ_UNIT = $(SDIR)/unit_test.o $(SDIR)/$(NAME)_par.o $(SDIR)/$(NAME)_ref.o $(SDI
 # The dependency file names.
 DEPS := $(OBJ_SEQ:.o=.d)
 
-all: sequential parallel
+all: sequential parallel unit_test
 
 sequential:  $(SDIR)/$(NAME)_seq
 
